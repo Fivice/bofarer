@@ -29,9 +29,17 @@
         <div class="sub-logo">
           Bofarer
         </div>
-        <div class="user">
+        <div class="user lf">
           <input class="lf" type="text" name="username" value="" placeholder="请输入用户名">
+          <button type="button" name="button">
+            <li><img src="images\people.png"/></li>
+          </button>
+        </div>
+        <div class="user lf">
           <input class="lf" type="password" name="password" value="" placeholder="请输入密码">
+          <button type="button" name="button">
+            <li><img src="images\key.png"/></li>
+          </button>
         </div>
         <div class="login display-block lf">
           <div class="login-in lf">
@@ -48,18 +56,36 @@
       </div>
     </div>
     <div class="footer">
-      <div class="declaration lf">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-      </div>
-      <div class="join-us lf">
-        <ul class="rf">
-          <li>item</li>
-          <li>item</li>
-          <li>item</li>
-          <li>item</li>
-          <li>item</li>
-        </ul>
+      <div class="container">
+        <div class="declaration lf">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        </div>
+        <div class="join-us lf">
+          <ul class="rf">
+            <span>加入我们:</span>
+            <li class="wx"><a href="" class="" onMouseOut="hide_WxImg()"  onmouseover="show_WxImg()">wx</a>
+              <img id="wxImg"src="images\bofarer_wx.png" alt="bofarer公众号">
+            </li>
+            <li class="qq"><a href="" class="" onMouseOut="hide_qqImg()"  onmouseover="show_qqImg()">wx</a>
+              <img id="qqImg"src="images\bofarer_qq.png" alt="bofarerQQ">
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
   </body>
 </html>
+<script type="text/javascript">
+function  show_WxImg(){
+document.getElementById("wxImg").style.visibility='visible';
+}
+function hide_WxImg(){
+document.getElementById("wxImg").style.visibility='hidden';
+}
+function  show_qqImg(){
+document.getElementById("qqImg").style.visibility='visible';
+}
+function hide_qqImg(){
+document.getElementById("qqImg").style.visibility='hidden';
+}
+</script>
