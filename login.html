@@ -2,8 +2,9 @@
 <html>
   <head>
     <meta name="charset" content="utf-8">
-    <title>Bofarer</title>
+    <title>Bofarer登陆/注册</title>
     <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="http:////at.alicdn.com/t/font_517193_u7rlwpulao72e29.css">
   </head>
   <body>
     <div class="header">
@@ -13,44 +14,78 @@
         </div>
         <div class="nav-table rf">
           <ul>
-            <li><a href="#">items</a></li>
-            <li><a href="#">items</a></li>
-            <li><a href="#">items</a></li>
-            <li><a href="#">items</a></li>
-            <li><a href="#">items</a></li>
-            <li><a href="#">items</a></li>
-            <li><a href="#">items</a></li>
+            <li><a href="#">首页</a></li>
+            <li><a href="#">企业服务</a></li>
+            <li><a href="#">企业优势</a></li>
+            <li><a href="#">企业价值观</a></li>
+            <li><a href="#">企业团队</a></li>
+            <li><a href="#">联系我们</a></li>
           </ul>
         </div>
       </div>
     </div>
-    <div class="main">
+    <div id="main-sub"class="main-sub" style="display:block">
       <div class="auth">
         <div class="sub-logo">
           Bofarer
         </div>
         <div class="user lf">
-          <input class="lf" type="text" name="username" value="" placeholder="请输入用户名">
+          <input id="user-name"class="lf" type="text" name="username" value="" placeholder="请输入用户名">
           <button type="button" name="button">
             <li><img src="images\people.png"/></li>
           </button>
         </div>
         <div class="user lf">
-          <input class="lf" type="password" name="password" value="" placeholder="请输入密码">
+          <input id="user-password"class="lf" type="password" name="password" value="" placeholder="请输入密码">
           <button type="button" name="button">
             <li><img src="images\key.png"/></li>
           </button>
         </div>
         <div class="login display-block lf">
           <div class="login-in lf">
-            <div class="rf">
-              <span class="btn-sub">登陆</span>
-            </div>
+              <button id="login-in" type="button" name="button" onclick="show_login()">登陆</button>
           </div>
-          <div class="login-on lf">
-            <div class="lf">
-              <span class="btn-sub">注册</span>
-            </div>
+          <div class="sign-in lf">
+            <button id="sign-in" type="button" name="button" onclick="show_reg()">注册</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="main-reg"class="main-reg" style="display:none">
+      <div class="auth">
+        <div class="sub-logo">
+          Bofarer
+        </div>
+        <div class="user lf">
+          <input id="user-name"class="lf" type="text" name="username" value="" placeholder="请输入用户名">
+          <button type="button" name="button">
+            <li><img src="images\people.png"/></li>
+          </button>
+        </div>
+        <div class="user lf">
+          <input id="user-name"class="lf" type="text" name="username" value="" placeholder="请输入手机号">
+          <button type="button" name="button">
+            <li><img src="images\phone.png"/></li>
+          </button>
+        </div>
+        <div class="user lf">
+          <input id="user-password"class="lf" type="password" name="password" value="" placeholder="请输入密码">
+          <button type="button" name="button">
+            <li><img src="images\key.png"/></li>
+          </button>
+        </div>
+        <div class="user lf">
+          <input id="user-password"class="lf" type="password" name="password" value="" placeholder="请再输入密码">
+          <button type="button" name="button">
+            <li><img src="images\key.png"/></li>
+          </button>
+        </div>
+        <div class="login display-block lf">
+          <div class="login-in lf">
+              <button id="login-in" type="button" name="button" onclick="show_login()">登陆</button>
+          </div>
+          <div class="sign-in lf">
+            <button id="sign-in" type="button" name="button" onclick="show_reg()">注册</button>
           </div>
         </div>
       </div>
@@ -58,15 +93,18 @@
     <div class="footer">
       <div class="container">
         <div class="declaration lf">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+          © Copyright 2017-2018<br>
+          &nbsp &nbsp 沪ICP备XXXXXXXXX号<br>
+          &nbsp &nbsp 客户投诉电话：021+5752 1003 <br>
+          &nbsp &nbsp 客户投诉邮箱：bofarer@outlook.com
         </div>
         <div class="join-us lf">
           <ul class="rf">
             <span>加入我们:</span>
-            <li class="wx"><a href="" class="" onMouseOut="hide_WxImg()"  onmouseover="show_WxImg()">wx</a>
+            <li class="wx"><a href="" class="iconfont icon-weixin" onMouseOut="hide_WxImg()"  onmouseover="show_WxImg()"></a>
               <img id="wxImg"src="images\bofarer_wx.png" alt="bofarer公众号">
             </li>
-            <li class="qq"><a href="" class="" onMouseOut="hide_qqImg()"  onmouseover="show_qqImg()">wx</a>
+            <li class="qq"><a href="" class="iconfont icon-qq" onMouseOut="hide_qqImg()"  onmouseover="show_qqImg()"></a>
               <img id="qqImg"src="images\bofarer_qq.png" alt="bofarerQQ">
             </li>
           </ul>
@@ -77,15 +115,25 @@
 </html>
 <script type="text/javascript">
 function  show_WxImg(){
-document.getElementById("wxImg").style.visibility='visible';
+  document.getElementById("wxImg").style.visibility='visible';
 }
 function hide_WxImg(){
-document.getElementById("wxImg").style.visibility='hidden';
+  document.getElementById("wxImg").style.visibility='hidden';
 }
 function  show_qqImg(){
-document.getElementById("qqImg").style.visibility='visible';
+  document.getElementById("qqImg").style.visibility='visible';
 }
 function hide_qqImg(){
-document.getElementById("qqImg").style.visibility='hidden';
+  document.getElementById("qqImg").style.visibility='hidden';
+}
+function show_login(){
+  // alert("login");
+  document.getElementById('main-sub').style.display="block";
+  document.getElementById('main-reg').style.display="none";
+}
+function show_reg(){
+  // alert("reg");
+  document.getElementById('main-sub').style.display="none";
+  document.getElementById('main-reg').style.display="block";
 }
 </script>

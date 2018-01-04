@@ -1,0 +1,12 @@
+.map-area{
+  background-color: #eee;
+}
+.map-area div{
+  margin: auto;
+  padding-top: 82px;
+  width: 900px;
+  height: 500px;
+}
+.gd-map{
+  border: 0px;
+}
