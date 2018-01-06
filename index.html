@@ -5,8 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Bofarer</title>
-  <link rel="stylesheet" href="css/login.css">
-  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="css\login.css">
+  <link rel="stylesheet" href="css\index.css">
+  <link rel="stylesheet" href="css\swiper.min.css">
   <link rel="stylesheet" href="http://at.alicdn.com/t/font_517193_lx1zmyd4py6tj4i.css">
 </head>
 <body>
@@ -27,8 +28,46 @@
       </div>
     </div>
   </div>
-  <div class="slider">
-
+  <div class="slider-page">
+    <div class="slider">
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="images\slider\slider_01.png" alt="公司正面照">
+          </div>
+          <div class="swiper-slide">
+            <img src="images\slider\slider_02.png" alt="办公环境">
+          </div>
+          <div class="swiper-slide">
+            <img src="images\slider\slider_03.png" alt="活动图片">
+          </div>
+          <div class="swiper-slide">
+            <img src="images\slider\slider_04.png" alt="其他">
+          </div>
+        </div>
+        <!-- 如果需要分页器 -->
+        <div class="swiper-pagination"></div>
+        <!-- 如果需要导航按钮 -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+    </div>
+  </div>
+  <div class="co-brif-intro">
+    <div class="bofarer-service">
+      公司服务内容
+    </div>
+  </div>
+  <div class="news">
+    <div class="bofarer-news">
+      <div class="important-things lf">important-things</div>
+      <div class="recent-news lf">recent-news</div>
+    </div>
+  </div>
+  <div class="recruit">
+    <div class="bofarer-recruit">
+      公司招聘内容
+    </div>
   </div>
   <div class="footer">
     <div class="container">
@@ -46,16 +85,29 @@
         <ul class="rf">
           <span>加入我们:</span>
           <li class="wx"><a href="" class="iconfont icon-weixin" onMouseOut="hide_WxImg()"  onmouseover="show_WxImg()"></a>
-            <img id="wxImg"src="../images\bofarer_wx.png" alt="bofarer公众号">
+            <img id="wxImg"src="images\bofarer_wx.png" alt="bofarer公众号">
           </li>
           <li class="qq"><a href="" class="iconfont icon-qq" onMouseOut="hide_qqImg()"  onmouseover="show_qqImg()"></a>
-            <img id="qqImg"src="../images\bofarer_qq.png" alt="bofarerQQ">
+            <img id="qqImg"src="images\bofarer_qq.png" alt="bofarerQQ">
           </li>
         </ul>
       </div>
     </div>
   </div>
-</body>
+  <script src="js\jquery-3.2.1.js"></script>
+  <script src="js\swiper.min.js"></script>
+  <script src="js\swiper.jquery.min.js"></script>
+  <script>
+    var mySwiper = new Swiper('.swiper-container', {
+	  autoplay: 5000,//可选选项，自动滑动
+    loop: true,
+    // 如果需要前进后退按钮
+    nextButton: '.swiper-button-next',
+    prevButton: '.swiper-button-prev',
+    // 如果需要分页器
+    pagination: '.swiper-pagination',
+    })
+  </script>
 </body>
 </html>
 <script type="text/javascript">

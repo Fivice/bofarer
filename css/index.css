@@ -1,5 +1,67 @@
-.slider{
+.slider-page{
+  margin: auto;
+  background-color: #eee;
   padding-top: 80px;
   width: 100%;
-  height: 580px;
+  height: 630px;
+}
+.slider{
+  margin: auto;
+  width: 1120px;
+  height: 630px;
+}
+.swiper-container {
+  width: 100%;
+  height: 100%;
+}
+.swiper-slide img{
+  width: inherit;
+  height: inherit;
+}
+.co-brif-intro{
+  margin: auto;
+  background-color: #fff;
+  width: 100%;
+  height: 300px;
+}
+.bofarer-service{
+  margin: auto;
+  width: 1120px;
+  height: inherit;
+  background-color: yellow;
+}
+.news{
+  margin: auto;
+  background-color: #eee;
+  width: 100%;
+  height: 400px;
+}
+.bofarer-news{
+  z-index: -1;
+  margin: auto;
+  width: 1120px;
+  height: inherit;
+  background-color: #FFF;
+}
+.important-things{
+  z-index: 99;
+  width: 440px;
+  height: inherit;
+}
+.recent-news{
+  z-index: 99;
+  width: 670px;
+  height: inherit;
+}
+.recruit{
+  margin: auto;
+  background-color: #fff;
+  width: 100%;
+  height: 350px;
+}
+.bofarer-recruit{
+  margin: auto;
+  background-color: #eee;
+  width: 1120px;
+  height: inherit;
 }

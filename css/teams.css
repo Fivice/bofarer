@@ -1,0 +1,41 @@
+.team-container{
+  margin: auto;
+  width: 1120px;
+  height: 500px;
+  padding-top: 80px;
+  background-color: #eee;
+}
+.others{
+  margin: auto;
+  width: 1120px;
+  height: 200px;
+  background-color: #eee;
+}
+.team-menus{
+  margin: auto;
+  width: 334px;
+  height: inherit;
+  border: 1px #f43434 solid;
+  border-top: 0px;
+  border-bottom: 0px;
+}
+#list-menus{
+
+}
+.team-member-details{
+  margin: auto;
+  width: 742px;
+  height: inherit;
+  border: 1px ##f43434 solid;
+  border-top: 0px;
+  border-bottom: 0px;
+}
+.member-list{
+  padding-left: 1px;
+  margin-top: 50px;
+}
+.member-list li{
+  display: block;
+  height: 50px;
+  border: 1px #3f75e0 solid;
+}
