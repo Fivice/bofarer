@@ -9,7 +9,7 @@
   margin: auto;
   width: 1120px;
   height: 200px;
-  background-color: #eee;
+  background-color: #ecf2c2;
 }
 .team-menus{
   margin: auto;
@@ -26,9 +26,13 @@
   margin: auto;
   width: 742px;
   height: inherit;
-  border: 1px ##f43434 solid;
+  border: 1px #f43434 solid;
   border-top: 0px;
   border-bottom: 0px;
+}
+.team-member-details div{
+  width: inherit;
+  height: inherit;
 }
 .member-list{
   padding-left: 1px;
@@ -38,4 +42,10 @@
   display: block;
   height: 50px;
   border: 1px #3f75e0 solid;
+}
+.member-list li div{
+  width: 150px;
+  height: inherit;
+  text-align: left;
+  line-height: 3;
 }

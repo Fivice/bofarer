@@ -7,7 +7,7 @@
   <title>Bofarer-teams</title>
   <link rel="stylesheet" href="..\css\login.css">
   <link rel="stylesheet" href="..\css\teams.css">
-  <link rel="stylesheet" href="http://at.alicdn.com/t/font_517193_lx1zmyd4py6tj4i.css">
+  <link rel="stylesheet" href="http://at.alicdn.com/t/font_517193_fr8502j6sw5yu8fr.css">
 </head>
 <body>
   <div class="header">
@@ -30,33 +30,62 @@
   <div class="team-container">
     <div class="team-menus lf">
       <ul class="member-list">
-        <li id="list-01">iteams</li>
-        <li id="list-02">iteams</li>
-        <li id="list-03">iteams</li>
-        <li id="list-04">iteams</li>
-        <li id="list-05">iteams</li>
-        <li id="list-03">iteams</li>
-        <li id="list-04">iteams</li>
-        <li id="list-05">iteams</li>
+        <li id="list-01" onmouseover="show_list('member-01')" onMouseOut="hide_list('member-01')">
+          <div class="lf">李万晖</div>
+          <div class="iconfont icon-forward rf" style="text-align:right"></div>
+        </li>
+        <li id="list-02" onmouseover="show_list('member-02')" onMouseOut="hide_list('member-02')">
+          <div class="lf">段小平</div>
+          <div class="iconfont icon-forward rf" style="text-align:right"></div>
+        </li>
+        <li id="list-03" onmouseover="show_list('member-03')" onMouseOut="hide_list('member-03')">
+          <div class="lf">吴修怀</div>
+          <div class="iconfont icon-forward rf" style="text-align:right"></div>
+        </li>
+        <li id="list-04" onmouseover="show_list('member-04')" onMouseOut="hide_list('member-04')">
+          <div class="lf">武斌</div>
+          <div class="iconfont icon-forward rf" style="text-align:right"></div>
+        </li>
+        <li id="list-05" onmouseover="show_list('member-05')" onMouseOut="hide_list('member-05')">
+          <div class="lf">iteams</div>
+          <div class="iconfont icon-forward rf" style="text-align:right"></div>
+        </li>
+        <li id="list-06" onmouseover="show_list('member-06')" onMouseOut="hide_list('member-06')">
+          <div class="lf">iteams</div>
+          <div class="iconfont icon-forward rf" style="text-align:right"></div>
+        </li>
+        <li id="list-07" onmouseover="show_list('member-07')" onMouseOut="hide_list('member-07')">
+          <div class="lf">iteams</div>
+          <div class="iconfont icon-forward rf" style="text-align:right"></div>
+        </li>
       </ul>
     </div>
     <div class="team-member-details lf">
-      <div id="member-01"class="member-details" style="display:block">
+      <div id="member-01"class="member-details" style="display:none;background-color:rgb(145, 235, 21)">
         001
       </div>
-      <div id="member-02"class="member-details" style="display:none">
+      <div id="member-02"class="member-details" style="display:none;background-color:rgb(235, 153, 21)">
         002
       </div>
-      <div id="member-03"class="member-details" style="display:none">
+      <div id="member-03"class="member-details" style="display:none;background-color:rgb(124, 129, 117)">
         003
       </div>
-      <div id="member-04"class="member-details" style="display:none">
+      <div id="member-04"class="member-details" style="display:none;background-color:rgb(21, 98, 235)">
         004
+      </div>
+      <div id="member-05"class="member-details" style="display:none;background-color:rgb(21, 210, 235)">
+        005
+      </div>
+      <div id="member-06"class="member-details" style="display:none;background-color:rgb(235, 21, 121)">
+        006
+      </div>
+      <div id="member-07"class="member-details" style="display:none;background-color:rgb(226, 208, 55)">
+        007
       </div>
     </div>
   </div>
   <div class="others">
-    
+
   </div>
   <div class="footer">
     <div class="container">
@@ -97,5 +126,11 @@ document.getElementById("qqImg").style.visibility='visible';
 }
 function hide_qqImg(){
 document.getElementById("qqImg").style.visibility='hidden';
+}
+function show_list(id){
+  document.getElementById(id).style.display="block";
+}
+function hide_list(id){
+  document.getElementById(id).style.display="none";
 }
 </script>
