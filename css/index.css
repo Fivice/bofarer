@@ -1,14 +1,35 @@
+.main-index{
+  display: block;
+  margin: auto;
+  width: 1120px;
+  box-shadow: 0px 0px 10px 2px rgba(128, 126, 126, 0.73);
+}
+.front-sign{
+  margin-right: 5px;
+  height: 25px;
+  width: 4px;
+  background-color: red;
+}
+a{
+  color: rgb(0, 0, 0);
+}
+a:hover{
+  color: rgba(0, 0, 0, 0.54);
+}
+a h3{
+  margin-top: 0px;
+}
 .slider-page{
   margin: auto;
   background-color: #eee;
   padding-top: 80px;
-  width: 100%;
-  height: 630px;
+  width: 1120px;
+  height: 400px;
 }
 .slider{
   margin: auto;
-  width: 1120px;
-  height: 630px;
+  width: inherit;
+  height: inherit;
 }
 .swiper-container {
   width: 100%;
@@ -20,48 +41,119 @@
 }
 .co-brif-intro{
   margin: auto;
-  background-color: #fff;
-  width: 100%;
-  height: 300px;
+  /* background-color: #bfa4a4; */
+  width: 1120px;
+  height: 250px;
 }
 .bofarer-service{
   margin: auto;
-  width: 1120px;
-  height: inherit;
-  background-color: yellow;
+  padding-top: 25px;
+  width: 1000px;
+  height: 200px;
+  border-bottom: 1px  rgb(210, 215, 211) solid;
+  /* background-color: yellow; */
+  background-image:url(../images/background/Bofarer_China.jpg);
+  background-size: cover;
+}
+.bofarer-service-intro{
+  width: 70%;
+  height: 130px;;
 }
 .news{
+  display: inline-block;
   margin: auto;
-  background-color: #eee;
   width: 100%;
-  height: 400px;
 }
 .bofarer-news{
-  z-index: -1;
+  display: inline-block;
   margin: auto;
   width: 1120px;
-  height: inherit;
-  background-color: #FFF;
+  height: 100%;
 }
 .important-things{
-  z-index: 99;
-  width: 440px;
-  height: inherit;
+  display: block;
+  width: 400px;
+  padding-right: 40px;
 }
 .recent-news{
-  z-index: 99;
+  display: block;
   width: 670px;
-  height: inherit;
+}
+.new-news{
+  display: block;
+  margin: auto;
+  width: 550px;
+  border-right: 1px rgb(194, 194, 194) solid;
+}
+.new-importants{
+  display: block;
+  margin: auto;
+  width: 300;
 }
 .recruit{
   margin: auto;
-  background-color: #fff;
   width: 100%;
   height: 350px;
 }
 .bofarer-recruit{
   margin: auto;
-  background-color: #eee;
-  width: 1120px;
-  height: inherit;
+  padding-top: 25px;
+  width: 1000px;
+  height: 300px;
+  border-top: 1px  rgb(210, 215, 211) solid;
+}
+.top-recurit{
+  margin-right: 20px;
+  background-color: rgb(237, 233, 228);
+  width: 310px;
+  height: 200px;
+  border-radius: 4px;
+}
+.medi-recurit{
+  margin-right: 20px;
+  background-color: rgb(237, 233, 228);
+  width: 310px;
+  height: 200px;
+  border-radius: 4px;
+}
+.base-recurit{
+  background-color: rgb(237, 233, 228);
+  width: 330px;
+  height: 200px;
+  border-radius: 4px;
+}
+.top-recurit-details{
+  margin: auto;
+  margin-top: 10px;
+  width: 280px;
+  height: 180px;
+}
+.medi-recurit-details{
+  margin: auto;
+  margin-top: 10px;
+  width: 280px;
+  height: 180px;
+}
+.base-recurit-details{
+  margin: auto;
+  margin-top: 10px;
+  width: 280px;
+  height: 180px;
+}
+.bofarer-recruit h5{
+  margin-top: 0px;
+  margin-bottom: 5px;
+  font-family: Helvetica, Tahoma, Arial;
+}
+.recruit-list{
+  list-style: none;
+  padding-left: 5px;
+}
+.recruit-list li::before{
+  content: url(../images/list_fro.png);
+}
+.right-nav{
+  width: 50px;
+  height: 50px;
+  position: fixed;
 }
