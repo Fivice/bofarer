@@ -1,4 +1,5 @@
 .main-index{
+  padding-top: 82px;
   display: block;
   margin: auto;
   width: 1120px;
@@ -22,7 +23,6 @@ a h3{
 .slider-page{
   margin: auto;
   background-color: #eee;
-  padding-top: 80px;
   width: 1120px;
   height: 400px;
 }
@@ -85,10 +85,16 @@ a h3{
   width: 550px;
   border-right: 1px rgb(194, 194, 194) solid;
 }
+.new-news div ul li{
+  margin-bottom: 5px;
+}
 .new-importants{
   display: block;
   margin: auto;
   width: 300;
+}
+.new-importants div ul li{
+  margin-bottom: 5px;
 }
 .recruit{
   margin: auto;
@@ -156,4 +162,6 @@ a h3{
   width: 50px;
   height: 50px;
   position: fixed;
+  top:520px;
+  background-color: rgb(232, 23, 75);
 }

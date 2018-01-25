@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Bofarer</title>
   <link rel="stylesheet" href="css\login.css">
+  <link rel="stylesheet" href="css\style.css">
   <link rel="stylesheet" href="css\index.css">
   <link rel="stylesheet" href="css\swiper.min.css">
   <link rel="stylesheet" href="http://at.alicdn.com/t/font_517193_fr8502j6sw5yu8fr.css">
@@ -23,8 +24,8 @@
           <li><a href="#">企业服务</a></li>
           <li><a href="#">企业优势</a></li>
           <li><a href="#">企业价值观</a></li>
-          <li><a href="#">企业团队</a></li>
-          <li><a href="#">联系我们</a></li>
+          <li><a href="html/teams.html">企业团队</a></li>
+          <li><a href="#join-us">联系我们</a></li>
         </ul>
       </div>
     </div>
@@ -62,7 +63,7 @@
         <div class="front-sign lf"></div>
         <a href="index.html"><h3>公司服务内容</h3></a>
         <div class="bofarer-service-intro lf">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+          &nbsp&nbsp&nbsp&nbspBofarer 成立于2018年1月，注册资本1000万，现拥有上海、安徽、无锡、苏州、嘉善分公司。公司核心团队从事人力资源行业10年以上。拥有大型企业工厂制造生产外包派遣经历。主导运行P&G宝洁博朗工厂，上海ABB机器人工厂，上海西门子工厂，苏州施耐德电气设备公司等大型的生产外包派遣。
         </div>
       </div>
     </div>
@@ -74,14 +75,10 @@
             <a href="index.html#recent-news"><div class="front-sign lf"></div><h3>最新消息</h3></a>
             <div>
               <ul>
-                <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit, </li>
-                <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit, </li>
-                <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit, </li>
-                <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit, </li>
-                <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit, </li>
-                <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit, </li>
-                <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit, </li>
-                <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit, </li>
+                <li>与无锡苹果手机制造商达成劳务输送协议</li>
+                <li>与华银电器在新三菱用工上达成劳务输送协议</li>
+                <li>与滨道公司签订劳务用工协议</li>
+                <li>Bofarer奉贤区奉城镇城大路152号门面开业</li>
               </ul>
             </div>
           </div>
@@ -92,10 +89,10 @@
             <div>
               <ul>
                 <li>Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet,  </li>
-                <li>Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet,  </li>
-                <li>Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,  </li>
-                <li>Lorem ipsum dolor sit amet,Lorem ipsum dolor sit amet,   </li>
-                <li>Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet,  </li>
+                <li>与无锡苹果手机制造商达成劳务输送协议</li>
+                <li>与华银电器在新三菱用工上达成劳务输送协议 </li>
+                <li>与滨道公司签订劳务用工协议 </li>
+                <li>2017年1月3日Bofarer公司注册成立 </li>
               </ul>
             </div>
         </div>
@@ -149,9 +146,9 @@
   </div>
 </div>
 <!-- 网页右导航 -->
-<div class="right-nav">
+<!-- <div id="right-nav"class="right-nav">
 
-</div>
+</div> -->
 <!-- 网页页脚 -->
 <div class="footer">
   <div class="container">
@@ -165,7 +162,7 @@
         <a href="html\location.html">上海市奉贤区奉城镇城大路152号</a>
       </li>
     </div>
-    <div class="join-us lf">
+    <div id="join-us"class="join-us lf">
       <ul class="rf">
         <span>加入我们:</span>
         <li class="wx"><a href="" class="iconfont icon-weixin" onMouseOut="hide_WxImg()"  onmouseover="show_WxImg()"></a>
@@ -206,8 +203,18 @@ document.getElementById("qqImg").style.visibility='visible';
 function hide_qqImg(){
 document.getElementById("qqImg").style.visibility='hidden';
 }
-window.onload=function(){
-
-  alert("宽"+document.body.clientWidth+"高"+document.body.clientHeight);
-}
+// window.onload=function(){
+//   // var top_sit=window.screen.height+"px"
+//   var bodyWidth=document.body.clientWidth;
+//   var left_sit
+//   if(bodyWidth>1120){
+//     left_sit=bodyWidth-(bodyWidth-1120)/2+"px"
+//   }
+//   else{
+//     left_sit=1120+"px"
+//   }
+//
+//   // document.getElementById("right-nav").style.top=left_sit
+//   document.getElementById("right-nav").style.left=left_sit
+// }
 </script>
