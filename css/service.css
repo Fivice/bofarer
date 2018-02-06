@@ -1,0 +1,115 @@
+.service-sections{
+  display: block;
+  width: 100%;
+  height: 540px;;
+  /* border: 1px #eee solid; */
+}
+.service-menu{
+  height: 82px;
+}
+.service-menu ul{
+  margin-top: 0px;
+  padding-left: 20px;
+  height: 50px;
+  box-shadow: 0px 0px 4px 0px rgb(80, 81, 84);
+  background-color: rgb(60, 60, 60);
+}
+.service-menu ul li{
+  position: relative;
+  float: left;
+  list-style-type: none;
+  display: block;
+  line-height: 3;
+  font-size: 20px;
+}
+.service-menu ul li a{
+  padding-left: 10px;
+  padding-right: 10px;
+  color: rgb(255, 255, 255);
+  border-left: 2px red solid;
+}
+.service-menu ul li a:hover{
+  color: rgb(156, 161, 157);
+}
+.section-title{
+  padding-left: 20px;
+  font-size: 24px;
+  width: 1100px;;
+  height: 40px;
+
+}
+.section-title::before{
+  content: url(../images/title_fro.png);
+
+}
+.section-row{
+  width: 100%;
+  height: 153px;
+  border-bottom: 1px rgb(255, 0, 0) dotted ;
+}
+.section-col{
+  width: 50%;
+  height: 456px;
+}
+.list{
+  width: 20%;
+  height: 450px;
+}
+.list h4{
+  margin-left: 40px;
+  color: rgb(245, 20, 20);
+}
+.list ul li{
+  height: 35px;
+  margin-bottom: 18px;
+  line-height: 2;
+  border-bottom: 1px rgb(212, 153, 41) solid;
+}
+.list-details{
+  padding-right: 20px;
+  width: 75%;
+  height: 450px;
+}
+.list-details ul{
+  padding-top: 47.36px;
+}
+.list-details ul li{
+  list-style-type: none;
+  height: 35px;
+  margin-bottom: 18px;
+  line-height: 2;
+  border-bottom: 1px rgb(212, 153, 41) solid;
+}
+.section-min{
+  width: 50%;
+  height: inherit;
+}
+.section-cons{
+  margin: auto;
+  width: 67%;
+  height: 400px;
+}
+.section-cons img{
+  width: 100%;
+  height: 100%;
+}
+.section-hr{
+  margin: auto;
+  width: 53%;
+  height: 456px;
+}
+.section-hr img{
+  width: 100%;
+  height: 100%;
+}
+.section-min-title{
+  padding-left: 20px;
+  color: rgb(224, 64, 64);
+  font-size: 18px;
+}
+.section-min-details ul li{
+  margin-top: 3px;
+  list-style-type:square;
+  font-size: 14px;
+  font-family: sans-serif;
+}

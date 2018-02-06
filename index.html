@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Bofarer</title>
-  <link rel="stylesheet" href="css\login.css">
   <link rel="stylesheet" href="css\style.css">
   <link rel="stylesheet" href="css\index.css">
   <link rel="stylesheet" href="css\swiper.min.css">
@@ -18,14 +17,24 @@
       <div class="logo lf">
         <a href="#">Bofarer</a>
       </div>
-      <div class="nav-table rf">
-        <ul>
+      <div class="nav-table lf">
+        <ul class="lf">
           <li><a href="#">首页</a></li>
-          <li><a href="#">企业服务</a></li>
-          <li><a href="#">企业优势</a></li>
-          <li><a href="#">企业价值观</a></li>
+          <li id="co-adv" onMouseOut="hide()" onmouseover="show()">
+            <a href="html/service.html">企业服务</a>
+            <ul id="sec-adv">
+              <li>派遣服务</li>
+              <li>外包服务</li>
+              <li>长期工/短期工</li>
+              <li>items</li>
+            </ul>
+          </li>
+          <li>
+            <a href="html/advantage.html">企业优势</a>
+          </li>
+          <li><a href="html/worth.htm">企业价值观</a></li>
           <li><a href="html/teams.html">企业团队</a></li>
-          <li><a href="#join-us">联系我们</a></li>
+          <li><a href="html/contact.html">联系我们</a></li>
         </ul>
       </div>
     </div>
@@ -37,16 +46,48 @@
         <div class="swiper-container">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
-              <img src="images\slider\slider_01.png" alt="公司正面照">
+              <img class=""src="images\slider\slider_01.jpg" alt="公司正面">
+              <div class="slider-txt">
+                <div class="slider-title">
+                  上海伯傅人力资源服务有限公司
+                </div>
+                <div class="slider-min-title">
+                  Shang Hai Bofarer Human Resource Service Co.Ltd
+                </div>
+              </div>
             </div>
             <div class="swiper-slide">
-              <img src="images\slider\slider_02.png" alt="办公环境">
+              <img src="images\slider\slider_02.jpg" alt="办公环境">
+              <div class="slider-txt">
+                <div class="slider-title">
+                  就业指导
+                </div>
+                <div class="slider-min-title">
+                  给您提供最详细的就业信息和最详细的就业指导
+                </div>
+              </div>
             </div>
             <div class="swiper-slide">
-              <img src="images\slider\slider_03.png" alt="活动图片">
+              <img src="images\slider\slider_03.jpg" alt="活动图片">
+              <div class="slider-txt">
+                <div class="slider-title">
+                  优质的服务
+                </div>
+                <div class="slider-min-title">
+                  给客户最优质的服务体验和服务内容
+                </div>
+              </div>
             </div>
             <div class="swiper-slide">
-              <img src="images\slider\slider_04.png" alt="其他">
+              <img src="images\slider\slider_04.jpg" alt="其他">
+              <div class="slider-txt">
+                <div class="slider-title">
+                    降低企业用工风险
+                </div>
+                <div class="slider-min-title">
+                  通过全新的用工模式为企业解决大部分用工风险
+                </div>
+              </div>
             </div>
           </div>
           <!-- 如果需要分页器 -->
@@ -63,7 +104,7 @@
         <div class="front-sign lf"></div>
         <a href="index.html"><h3>公司服务内容</h3></a>
         <div class="bofarer-service-intro lf">
-          &nbsp&nbsp&nbsp&nbspBofarer 成立于2018年1月，注册资本1000万，现拥有上海、安徽、无锡、苏州、嘉善分公司。公司核心团队从事人力资源行业10年以上。拥有大型企业工厂制造生产外包派遣经历。主导运行P&G宝洁博朗工厂，上海ABB机器人工厂，上海西门子工厂，苏州施耐德电气设备公司等大型的生产外包派遣。
+          &nbsp&nbsp&nbsp&nbspBofarer 成立于2018年1月，注册资本1000万，现拥有上海、安徽、无锡、苏州、嘉善分公司。公司核心团队从事人力资源行业10年以上。拥有大型企业工厂制造生产外包派遣经历。主导运行过多家大型企业的生产外包项目。
         </div>
       </div>
     </div>
@@ -75,10 +116,11 @@
             <a href="index.html#recent-news"><div class="front-sign lf"></div><h3>最新消息</h3></a>
             <div>
               <ul>
-                <li>与无锡苹果手机制造商达成劳务输送协议</li>
-                <li>与华银电器在新三菱用工上达成劳务输送协议</li>
-                <li>与滨道公司签订劳务用工协议</li>
-                <li>Bofarer奉贤区奉城镇城大路152号门面开业</li>
+                <li><a href="#">2018年1月20日浙江嘉善分公司成立</a></li>
+                <li><a href="#">2018年1月上海分公司与上海奉贤汽配有限公司合</a>作</li>
+                <li><a href="#">2018年1月3日上海分公司成立</a></li>
+                <li><a href="#">2017年12月26日合肥分公司成立</a></li>
+                <li><a href="#">2017年9月29日无锡分公司成立</a></li>
               </ul>
             </div>
           </div>
@@ -88,11 +130,11 @@
             <a href="index.html#important-things"><div class="front-sign lf"></div><h3>大事记</h3></a>
             <div>
               <ul>
-                <li>Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet,  </li>
-                <li>与无锡苹果手机制造商达成劳务输送协议</li>
-                <li>与华银电器在新三菱用工上达成劳务输送协议 </li>
-                <li>与滨道公司签订劳务用工协议 </li>
-                <li>2017年1月3日Bofarer公司注册成立 </li>
+                <li><a href="#">2018年1月20日浙江嘉善分公司成立</a></li>
+                <li><a href="#">2018年1月上海分公司与上海奉贤汽配有限公司合</a>作</li>
+                <li><a href="#">2018年1月3日上海分公司成立</a></li>
+                <li><a href="#">2017年12月26日合肥分公司成立</a></li>
+                <li><a href="#">2017年9月29日无锡分公司成立</a></li>
               </ul>
             </div>
         </div>
@@ -107,12 +149,13 @@
         <div class="top-recurit-details">
           <h5>高级招聘</h5>
           <ul class="recruit-list">
-            <li><a href="#">items,need you join us</a></li>
-            <li><a href="#">items,need you join us</a></li>
-            <li><a href="#">items,need you join us</a></li>
-            <li><a href="#">items,need you join us</a></li>
-            <li><a href="#">items,need you join us</a></li>
-            <li><a href="#">items,need you join us</a></li>
+            <li><a href="#">项目经理</a></li>
+            <li><a href="#">驻厂经理</a></li>
+            <li><a href="#">法务专员</a></li>
+            <li><a href="#">业务员</a></li>
+            <li><a href="#">人事专员</a></li>
+            <li><a href="#">安全经理</a></li>
+            <li><a href="#">司机</a></li>
           </ul>
         </div>
       </div>
@@ -120,12 +163,12 @@
         <div class="medi-recurit-details">
           <h5>中级招聘</h5>
           <ul class="recruit-list">
-            <li><a href="#">items,need you join us</a></li>
-            <li><a href="#">items,need you join us</a></li>
-            <li><a href="#">items,need you join us</a></li>
-            <li><a href="#">items,need you join us</a></li>
-            <li><a href="#">items,need you join us</a></li>
-            <li><a href="#">items,need you join us</a></li>
+            <li><a href="#">冲压工</a></li>
+            <li><a href="#">电工</a></li>
+            <li><a href="#">安保</a></li>
+            <li><a href="#">技工</a></li>
+            <li><a href="#">客房服务</a></li>
+            <li><a href="#">主播</a></li>
           </ul>
         </div>
       </div>
@@ -133,12 +176,9 @@
         <div class="base-recurit-details">
           <h5>劳务招聘</h5>
           <ul class="recruit-list">
-            <li><a href="#">items,need you join us</a></li>
-            <li><a href="#">items,need you join us</a></li>
-            <li><a href="#">items,need you join us</a></li>
-            <li><a href="#">items,need you join us</a></li>
-            <li><a href="#">items,need you join us</a></li>
-            <li><a href="#">items,need you join us</a></li>
+            <li><a href="#">上海地区普工</a></li>
+            <li><a href="#">江苏地区普工</a></li>
+            <li><a href="#">安徽地区普工</a></li>
           </ul>
         </div>
       </div>
@@ -154,12 +194,12 @@
   <div class="container">
     <div class="declaration lf">
       <li class="iconfont icon-Copyright">
-        Copyright 2017-2018  &nbsp沪ICP备XXXXXXXXX号<br>
-        &nbsp &nbsp 客户投诉电话：021+5752 1003 <br>
-        &nbsp &nbsp 客户投诉邮箱：bofarer@outlook.com <br>
+        Copyright 2017-2018  &nbsp沪ICP备18003788号<br>
+        &nbsp &nbsp 联系电话：021+5752 1003 <br>
+        &nbsp &nbsp 客户联系邮箱：bofarer@outlook.com <br>
       </li>
-      <li  class="iconfont icon-positioning">
-        <a href="html\location.html">上海市奉贤区奉城镇城大路152号</a>
+      <li class="iconfont icon-positioning">
+        <a class="map-link" href="html\location.html">上海市奉贤区奉城镇城大路152号</a>
       </li>
     </div>
     <div id="join-us"class="join-us lf">
@@ -203,18 +243,10 @@ document.getElementById("qqImg").style.visibility='visible';
 function hide_qqImg(){
 document.getElementById("qqImg").style.visibility='hidden';
 }
-// window.onload=function(){
-//   // var top_sit=window.screen.height+"px"
-//   var bodyWidth=document.body.clientWidth;
-//   var left_sit
-//   if(bodyWidth>1120){
-//     left_sit=bodyWidth-(bodyWidth-1120)/2+"px"
-//   }
-//   else{
-//     left_sit=1120+"px"
-//   }
-//
-//   // document.getElementById("right-nav").style.top=left_sit
-//   document.getElementById("right-nav").style.left=left_sit
-// }
+function show(){
+document.getElementById("sec-adv").style.visibility='visible';
+}
+function hide(){
+document.getElementById("sec-adv").style.visibility='hidden';
+}
 </script>

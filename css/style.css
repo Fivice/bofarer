@@ -20,7 +20,13 @@ body{
   width: 860px;
   height: inherit;
 }
-
+.main-container{
+  margin: auto;
+  display: block;
+  width: 1120px;
+  padding-top: 82px;
+  box-shadow: 0px 0px 6px 0px #000;
+}
 .header{
   z-index: 99;
   position: fixed;
@@ -31,7 +37,7 @@ body{
 }
 .nav{
   margin: auto;
-  width: 860px;
+  width: 1120px;
   height: inherit;
 }
 .logo{
@@ -45,27 +51,59 @@ body{
   color: #666;
 }
 .nav-table{
+  padding-left: 200px;
+  width: 650px;
   height: inherit;
 }
 .nav-table ul{
-  margin: 15px 15px 0px 0px;
+  margin: 0px 0px 0px 0px;
   padding: 0px 20px 0px 20px;
-  line-height: 3;
-  height: 48px;
+  line-height: 5;
+  width: inherit;
+  height: 100%;
 }
 .nav-table ul li{
-  display: inline;
+  position: relative;
+  float: left;
+  display: block;
   padding-right: 10px;
   padding-left: 10px;
-  width: 40px;
-  height: 40px;
+  width: 80px;
+  height: 100%;
 }
 .nav-table ul li a{
   color:#000;
   font-weight: 600;
+  height: 80px;
 }
 .nav-table ul li a:hover{
   color: #777;
+}
+#co-adv ul{
+  position: absolute;
+  top:100%;
+  line-height: 3;
+  width: 200px;
+  height: 160px;
+  padding: 0px;
+  border: 1px rgb(212, 212, 212) solid;
+  border-radius: 0px 0px 5px 5px;
+  background-color: rgb(255, 255, 255);
+}
+#co-adv ul li{
+  padding: 0px;
+  height: 40px;
+  width: 180px;
+  font-size: 14px;
+  padding-left: 20px;
+}
+
+#co-adv ul li:hover{
+  background-color: rgb(180, 180, 180);
+  color:rgb(255, 255, 255);
+}
+#co-adv ul{
+  visibility: hidden;
 }
 .footer{
   margin-top: 1px;
@@ -88,6 +126,9 @@ body{
 .declaration li{
   display: block;
   font-size: 13px;
+}
+.map-link:hover{
+  color: rgba(#ed2727, 0.75);
 }
 .join-us{
   margin-right: 30px;
