@@ -1,127 +1,144 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta name="charset" content="utf-8">
-    <title>Bofarer登陆/注册</title>
-    <link rel="stylesheet" href="css/login.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="http://at.alicdn.com/t/font_517193_fr8502j6sw5yu8fr.css">
-  </head>
-  <body>
-    <!-- 网页导航 -->
-    <div class="header">
-      <div class="nav">
-        <div class="logo lf">
-          Bofarer
+<head>
+  <meta name="charset" content="utf-8">
+  <title>Bofarer登陆/注册</title>
+  <link rel="shortcut icon" href="images/favicon.png">
+  <link rel="stylesheet" href="css/login.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="http://at.alicdn.com/t/font_517193_fr8502j6sw5yu8fr.css">
+</head>
+<body>
+  <!-- 网页导航栏 -->
+  <div class="header">
+    <div class="nav">
+      <div class="logo lf">
+        <a href="#">Bofarer</a>
+      </div>
+      <div class="nav-table lf">
+        <ul class="lf">
+          <li><a href="#">首页</a></li>
+          <li id="co-adv" onMouseOut="hide()" onmouseover="show()">
+            <a href="html/service.html">服务产品</a>
+            <ul id="sec-adv">
+              <li><a href="#">服务业外包</a></li>
+              <li><a href="#">岗位外包</a></li>
+              <li><a href="#">薪酬福利外包</a></li>
+              <li><a href="#">生产工段外包</a></li>
+              <li><a href="#">业务流程外包</a></li>
+              <li><a href="#">人事外包</a></li>
+              <li><a href="#">中高端灵活用工</a></li>
+              <li><a href="#">中高端人才寻访</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="html/advantage.html">企业优势</a>
+          </li>
+          <li><a href="html/worth.htm">企业价值观</a></li>
+          <li><a href="html/teams.html">企业服务</a></li>
+          <li><a href="html/contact.html">联系我们</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- 登陆选项区域 -->
+  <!-- 登陆页面 -->
+  <div id="main-sub" class="main-sub" style="display:block">
+    <div class="auth">
+      <div class="sub-logo">
+        Bofarer
+      </div>
+      <div class="user lf">
+        <input id="login-user-name" class="lf" type="text" name="username" value="" placeholder="请输入用户名">
+        <button type="button" name="button">
+          <img src="images/people.png"/>
+        </button>
+      </div>
+      <div class="user lf">
+        <input id="login-user-password" class="lf" type="password" name="password" value="" placeholder="请输入密码">
+        <button type="button" name="button">
+          <img src="images/key.png"/>
+        </button>
+      </div>
+      <div class="login display-block lf">
+        <div class="login-in lf">
+          <button id="login-login-in" type="button" name="button" onclick="show_login()">登陆</button>
         </div>
-        <div class="nav-table rf">
-          <ul>
-            <li><a href="index.html">首页</a></li>
-            <li><a href="html/service.html">企业服务</a></li>
-            <li><a href="html/advantage.html">企业优势</a></li>
-            <li><a href="html/worth.htm">企业价值观</a></li>
-            <li><a href="html/teams.html">企业团队</a></li>
-            <li><a href="html/contact.html">联系我们</a></li>
-          </ul>
+        <div class="sign-in lf">
+          没有账号？<span id="login-sign-in" onclick="show_reg()">注册</span>
         </div>
       </div>
     </div>
-    <!-- 登陆选项区域 -->
-    <!-- 登陆页面 -->
-    <div id="main-sub"class="main-sub" style="display:block">
-      <div class="auth">
-        <div class="sub-logo">
-          Bofarer
+  </div>
+  <!-- 注册页面 -->
+  <div id="main-reg"class="main-reg" style="display:none">
+    <div class="auth">
+      <div class="sub-logo">
+        Bofarer
+      </div>
+      <div class="user lf">
+        <input id="reg-user-name" class="lf" type="text" name="username" value="" placeholder="请输入用户名">
+        <button type="button" name="button">
+          <img src="images/people.png"/>
+        </button>
+      </div>
+      <div class="user lf">
+        <input id="reg-user-name" class="lf" type="text" name="username" value="" placeholder="请输入手机号">
+        <button type="button" name="button">
+          <img src="images/phone.png"/>
+        </button>
+      </div>
+      <div class="user lf">
+        <input id="reg-user-password" class="lf" type="password" name="password" value="" placeholder="请输入密码">
+        <button type="button" name="button">
+          <img src="images\key.png"/>
+        </button>
+      </div>
+      <div class="user lf">
+        <input id="reg-user-password" class="lf" type="password" name="password" value="" placeholder="请再输入密码">
+        <button type="button" name="button">
+          <img src="images/key.png"/>
+        </button>
+      </div>
+      <div class="login display-block lf">
+        <div class="login-in lf">
+          <button id="reg-sign-in" type="button" name="button" onclick="show_reg()">注册</button>
         </div>
-        <div class="user lf">
-          <input id="user-name"class="lf" type="text" name="username" value="" placeholder="请输入用户名">
-          <button type="button" name="button">
-            <li><img src="images\people.png"/></li>
-          </button>
-        </div>
-        <div class="user lf">
-          <input id="user-password"class="lf" type="password" name="password" value="" placeholder="请输入密码">
-          <button type="button" name="button">
-            <li><img src="images\key.png"/></li>
-          </button>
-        </div>
-        <div class="login display-block lf">
-          <div class="login-in lf">
-              <button id="login-in" type="button" name="button" onclick="show_login()">登陆</button>
-          </div>
-          <div class="sign-in lf">
-            <button id="sign-in" type="button" name="button" onclick="show_reg()">注册</button>
-          </div>
+        <div class="sign-in lf">
+          已有账号？<span id="reg-login-in" onclick="show_login()">登陆</span>
         </div>
       </div>
     </div>
-    <!-- 注册页面 -->
-    <div id="main-reg"class="main-reg" style="display:none">
-      <div class="auth">
-        <div class="sub-logo">
-          Bofarer
-        </div>
-        <div class="user lf">
-          <input id="user-name"class="lf" type="text" name="username" value="" placeholder="请输入用户名">
-          <button type="button" name="button">
-            <li><img src="images\people.png"/></li>
-          </button>
-        </div>
-        <div class="user lf">
-          <input id="user-name"class="lf" type="text" name="username" value="" placeholder="请输入手机号">
-          <button type="button" name="button">
-            <li><img src="images\phone.png"/></li>
-          </button>
-        </div>
-        <div class="user lf">
-          <input id="user-password"class="lf" type="password" name="password" value="" placeholder="请输入密码">
-          <button type="button" name="button">
-            <li><img src="images\key.png"/></li>
-          </button>
-        </div>
-        <div class="user lf">
-          <input id="user-password"class="lf" type="password" name="password" value="" placeholder="请再输入密码">
-          <button type="button" name="button">
-            <li><img src="images\key.png"/></li>
-          </button>
-        </div>
-        <div class="login display-block lf">
-          <div class="login-in lf">
-              <button id="login-in" type="button" name="button" onclick="show_login()">登陆</button>
-          </div>
-          <div class="sign-in lf">
-            <button id="sign-in" type="button" name="button" onclick="show_reg()">注册</button>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- 网页页脚 -->
-    <div class="footer">
-      <div class="container">
-        <div class="declaration lf">
+  </div>
+  <!-- 网页页脚 -->
+  <div class="footer">
+    <div class="ft-container">
+      <div class="declaration lf">
+        <ul>
           <li class="iconfont icon-Copyright">
             Copyright 2017-2018  &nbsp沪ICP备18003788号<br>
             &nbsp &nbsp 联系电话：021+5752 1003 <br>
             &nbsp &nbsp 客户联系邮箱：bofarer@outlook.com <br>
           </li>
-          <li  class="iconfont icon-positioning">
-            <a href="html\location.html">上海市奉贤区奉城镇城大路152号</a>
+          <li class="iconfont icon-positioning">
+            <a class="map-link" href="html\location.html">上海市奉贤区奉城镇城大路152号</a>
           </li>
-        </div>
-        <div id="join-us" class="join-us lf">
-          <ul class="rf">
-            <span>加入我们:</span>
-            <li class="wx"><a href="" class="iconfont icon-weixin" onMouseOut="hide_WxImg()"  onmouseover="show_WxImg()"></a>
-              <img id="wxImg"src="images\bofarer_wx.png" alt="bofarer公众号">
-            </li>
-            <li class="qq"><a href="" class="iconfont icon-qq" onMouseOut="hide_qqImg()"  onmouseover="show_qqImg()"></a>
-              <img id="qqImg"src="images\bofarer_qq.png" alt="bofarerQQ">
-            </li>
-          </ul>
-        </div>
+        </ul>
+      </div>
+      <div id="join-us"class="join-us lf">
+        <ul class="rf">
+          <li><span>加入我们:</span></li>
+          <li class="wx"><a href="" class="iconfont icon-weixin" onMouseOut="hide_WxImg()"  onmouseover="show_WxImg()"></a>
+            <img id="wxImg"src="images/bofarer_sh.jpg" alt="bofarer公众号">
+          </li>
+          <li class="qq"><a href="" class="iconfont icon-qq" onMouseOut="hide_qqImg()"  onmouseover="show_qqImg()"></a>
+            <img id="qqImg"src="images/bofarer_qq.jpg" alt="bofarerQQ">
+          </li>
+        </ul>
       </div>
     </div>
-  </body>
+  </div>
+</body>
 </html>
 <script type="text/javascript">
 function  show_WxImg(){
@@ -145,5 +162,8 @@ function show_reg(){
   // alert("reg");
   document.getElementById('main-sub').style.display="none";
   document.getElementById('main-reg').style.display="block";
+}
+function sub_login_info(){
+
 }
 </script>

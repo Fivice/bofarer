@@ -5,53 +5,95 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Bofarer-advantages</title>
-  <link rel="stylesheet" href="..\css\style.css">
-  <link rel="stylesheet" href="../css/advantage.css">
+  <link rel="shortcut icon" href="../images/favicon.png">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/contract.css">
   <link rel="stylesheet" href="http://at.alicdn.com/t/font_517193_fr8502j6sw5yu8fr.css">
 </head>
 <body>
+  <!-- 网页导航栏 -->
   <div class="header">
     <div class="nav">
       <div class="logo lf">
-        Bofarer
+        <a href="#">Bofarer</a>
       </div>
-      <div class="nav-table rf">
-        <ul>
+      <div class="nav-table lf">
+        <ul class="lf">
           <li><a href="../index.html">首页</a></li>
-          <li><a href="../html/service.html">企业服务</a></li>
-          <li><a href="../html/advantage.html">企业优势</a></li>
-          <li><a href="../html/worth.htm">企业价值观</a></li>
-          <li><a href="../html/teams.html">企业团队</a></li>
-          <li><a href="../html/contact.html">联系我们</a></li>
+          <li id="co-adv" onMouseOut="hide()" onmouseover="show()">
+            <a href="serviceProduct.html">服务产品</a>
+            <ul id="sec-adv">
+              <li><a href="#">服务业外包</a></li>
+              <li><a href="#">岗位外包</a></li>
+              <li><a href="#">薪酬福利外包</a></li>
+              <li><a href="#">生产工段外包</a></li>
+              <li><a href="#">业务流程外包</a></li>
+              <li><a href="#">人事外包</a></li>
+              <li><a href="#">中高端灵活用工</a></li>
+              <li><a href="#">中高端人才寻访</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="advantage.html">企业优势</a>
+          </li>
+          <li><a href="worth.html">企业价值观</a></li>
+          <li><a href="service.html">企业服务</a></li>
+          <li><a href="contact.html">联系我们</a></li>
         </ul>
       </div>
     </div>
   </div>
-  <div class="main-container">
-    <div class="section-01">
-      联系我们：watting...
+  <div class="contact-main-container">
+    <div class="section">
+      <div class="sub-title">
+        <span>联系我们</span>
+      </div>
+      <div class="contact-info lf">
+        <div class="contact-info-map">
+          <iframe src="http://uri.amap.com/marker?position=121.646468,30.906847" width="100%" height="100%"></iframe>
+        </div>
+        <div class="contact-info-details">
+          <span>您好！你可以通过网页底部的微信二维码关注我们公众号，里面有我们最新的动态。</span>
+        </div>
+      </div>
+      <div class="contract-sub lf">
+        <div class="userInput userName">
+          <input style="text" name="userName" placeholder="姓名"/>
+        </div>
+        <div class="userInput userPhone">
+          <input style="text" name="userPhone" placeholder="联系电话"/>
+        </div>
+        <div class="questionDetails">
+          <textarea name="questionDetails" placeholder="留言"></textarea>
+        </div>
+        <div class="userSub">
+          <button id="sub-ques" type="button" name="button">提交</button>
+        </div>
+      </div>
     </div>
   </div>
   <div class="footer">
-    <div class="container">
+    <div class="ft-container">
       <div class="declaration lf">
-        <li class="iconfont icon-Copyright">
-          Copyright 2017-2018  &nbsp沪ICP备18003788号<br>
-          &nbsp &nbsp 联系电话：021+5752 1003 <br>
-          &nbsp &nbsp 客户联系邮箱：bofarer@outlook.com <br>
-        </li>
-        <li  class="iconfont icon-positioning">
-          <a href="..\html\location.html">上海市奉贤区奉城镇城大路152号</a>
-        </li>
+        <ul>
+          <li class="iconfont icon-Copyright">
+            Copyright 2017-2018  &nbsp沪ICP备18003788号<br>
+            &nbsp &nbsp 联系电话：021+5752 1003 <br>
+            &nbsp &nbsp 客户联系邮箱：bofarer@outlook.com <br>
+          </li>
+          <li class="iconfont icon-positioning">
+            <a class="map-link" href="html\location.html">上海市奉贤区奉城镇城大路152号</a>
+          </li>
+        </ul>
       </div>
       <div id="join-us"class="join-us lf">
         <ul class="rf">
-          <span>加入我们:</span>
+          <li><span>加入我们:</span></li>
           <li class="wx"><a href="" class="iconfont icon-weixin" onMouseOut="hide_WxImg()"  onmouseover="show_WxImg()"></a>
-            <img id="wxImg"src="..\images\bofarer_wx.png" alt="bofarer公众号">
+            <img id="wxImg"src="../images/bofarer_sh.jpg" alt="bofarer公众号">
           </li>
           <li class="qq"><a href="" class="iconfont icon-qq" onMouseOut="hide_qqImg()"  onmouseover="show_qqImg()"></a>
-            <img id="qqImg"src="..\images\bofarer_qq.png" alt="bofarerQQ">
+            <img id="qqImg"src="../images/bofarer_qq.jpg" alt="bofarerQQ">
           </li>
         </ul>
       </div>
@@ -59,18 +101,5 @@
   </div>
 </body>
 </html>
-<script type="text/javascript">
-function  show_WxImg(){
-  document.getElementById("wxImg").style.visibility='visible';
-}
-function hide_WxImg(){
-  document.getElementById("wxImg").style.visibility='hidden';
-}
-function  show_qqImg(){
-  document.getElementById("qqImg").style.visibility='visible';
-}
-function hide_qqImg(){
-  document.getElementById("qqImg").style.visibility='hidden';
-}
-
-</script>
+<!-- 外部引入js -->
+<script src="../common/common.js" charset="utf-8"></script>
